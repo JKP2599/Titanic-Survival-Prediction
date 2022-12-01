@@ -6,11 +6,6 @@ import pickle
 
 app = Flask(__name__)  # initializing a flask app
 
-'''
-def __init__(self):
-    self.file_object = open("application_logging/logfile.txt", 'a+')
-    self.log_writer = logger.App_Logger()
-'''
 @app.route('/', methods=['GET'])  # route to display the home page
 @cross_origin()
 def homePage():
