@@ -1,0 +1,9 @@
+2022-12-01/15:35:36		Taking User Input
+2022-12-01/15:35:36		Initialising Linear Regression Model
+2022-12-01/15:35:40		Initializing Scaling model
+2022-12-01/15:35:40		Input Scaling
+2022-12-01/15:35:40		Generating Prediction using Trained model
+2022-12-01/15:35:40		The Predicted Price for this Property is [26.09283119]
+2022-12-01/15:36:03		Taking User Input
+2022-12-01/15:36:03		Error Occurred!!
+2022-12-01/15:36:03		The Exception message is: could not convert string to float: ''
