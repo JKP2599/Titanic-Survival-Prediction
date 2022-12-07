@@ -1,4 +1,4 @@
-# FSDS-PracticalAssignment1
+# LinearRegression-HousingPricePrediction
 
 This app uses a linear regression model based on the boston housing prices dataset.
 
