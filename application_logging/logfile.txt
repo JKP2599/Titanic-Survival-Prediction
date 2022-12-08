@@ -33,3 +33,54 @@
 2022-12-01/15:54:21		Input Scaling
 2022-12-01/15:54:21		Generating Prediction using Trained model
 2022-12-01/15:54:21		The Predicted Price for this Property is [26.09283119]
+2022-12-04/17:44:38		Taking User Input
+2022-12-04/17:44:38		Initialising Linear Regression Model
+2022-12-04/17:44:39		Initializing Scaling model
+2022-12-04/17:44:39		Input Scaling
+2022-12-04/17:44:39		Generating Prediction using Trained model
+2022-12-04/17:44:39		The Predicted Price for this Property is [26.09283119]
+2022-12-04/17:47:29		Taking User Input
+2022-12-04/17:47:29		Initialising Linear Regression Model
+2022-12-04/17:47:30		Initializing Scaling model
+2022-12-04/17:47:30		Input Scaling
+2022-12-04/17:47:30		Generating Prediction using Trained model
+2022-12-04/17:47:30		The Predicted Price for this Property is [26.09283119]
+2022-12-04/17:47:58		Taking User Input
+2022-12-04/17:47:58		Initialising Linear Regression Model
+2022-12-04/17:47:59		Initializing Scaling model
+2022-12-04/17:47:59		Input Scaling
+2022-12-04/17:47:59		Generating Prediction using Trained model
+2022-12-04/17:47:59		The Predicted Price for this Property is [26.09283119]
+2022-12-08/11:58:34		Taking User Input
+2022-12-08/11:58:34		Initialising Linear Regression Model
+2022-12-08/11:58:35		Initializing Scaling model
+2022-12-08/11:58:35		Input Scaling
+2022-12-08/11:58:35		Generating Prediction using Trained model
+2022-12-08/11:58:35		The Predicted Price for this Property is [26.09283119]
+2022-12-08/12:04:14		Taking User Input
+2022-12-08/12:04:14		Error Occurred!!
+2022-12-08/12:04:14		The Exception message is: could not convert string to float: ''
+2022-12-08/12:04:16		Taking User Input
+2022-12-08/12:04:16		Initialising Linear Regression Model
+2022-12-08/12:04:17		Initializing Scaling model
+2022-12-08/12:04:17		Input Scaling
+2022-12-08/12:04:17		Generating Prediction using Trained model
+2022-12-08/12:04:17		The Predicted Price for this Property is [26.09283119]
+2022-12-08/12:06:12		Taking User Input
+2022-12-08/12:06:12		Initialising Linear Regression Model
+2022-12-08/12:06:12		Initializing Scaling model
+2022-12-08/12:06:12		Input Scaling
+2022-12-08/12:06:12		Generating Prediction using Trained model
+2022-12-08/12:06:12		The Predicted Price for this Property is [26.09283119]
+2022-12-08/12:06:47		Taking User Input
+2022-12-08/12:06:47		Initialising Linear Regression Model
+2022-12-08/12:06:48		Initializing Scaling model
+2022-12-08/12:06:48		Input Scaling
+2022-12-08/12:06:48		Generating Prediction using Trained model
+2022-12-08/12:06:48		The Predicted Price for this Property is [26.09283119]
+2022-12-08/12:08:42		Taking User Input
+2022-12-08/12:08:42		Initialising Linear Regression Model
+2022-12-08/12:08:43		Initializing Scaling model
+2022-12-08/12:08:43		Input Scaling
+2022-12-08/12:08:43		Generating Prediction using Trained model
+2022-12-08/12:08:43		The Predicted Price for this Property is [26.09283119]

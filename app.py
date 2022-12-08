@@ -50,7 +50,8 @@ def index():
             log_writer.log(file_object, f"The Predicted Price for this Property is {prediction}")
             print('prediction is', prediction)
             # showing the prediction results in a UI
-            return f"The Predicted Price for this Property is {prediction}"
+            return render_template("results.html", prediction=prediction)
+            #return f"The Predicted Price for this Property is {prediction}"
         except Exception as e:
             log_writer.log(file_object, "Error Occurred!!")
             log_writer.log(file_object, f'The Exception message is: {e}')

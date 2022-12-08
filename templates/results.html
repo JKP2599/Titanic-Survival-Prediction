@@ -1,29 +1,12 @@
-<!DOCTYPE html>
-<html lang="en" >
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Review Page</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-
-      <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-
-
+  <title>Linear Regression App</title>
+  <link rel="stylesheet" href="static/css/styleres.css">
 </head>
-
 <body>
-
-  <div class="table-users">
-   <div class="header">Prediction</div>
-
-      <p>Your chance for admission is {{prediction}} percent</p>
-</div>
-
-
-
+  <h1>Linear Regression App</h1>
+  <div id="result">
+    The predicted price for this property is: {{ prediction }}
+  </div>
 </body>
-
 </html>

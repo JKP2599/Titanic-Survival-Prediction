@@ -1,30 +1,44 @@
-{% extends 'base.html' %}
-
-{% block head %}
-
-<title>Search Page</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-{% endblock %}
-
-{% block body %}
-<div class="content">
-    <h1 style="text-align: center">Predict The Air Temperature [K]</h1>
-
-    <div class="form">
-        <form action="/predict" method="POST">
-            <input type="number" name="CRIM" id="CRIM" placeholder="CRIM">
-            <input type="number" name="ZN" id="ZN" placeholder="ZN">
-            <input type="number" name="CHAS" id="CHAS" placeholder="CHAS">
-            <input type="number" name="NOX" id="NOX" placeholder="NOX">
-            <input type="number" name="RM" id="RM" placeholder="RM">
-            <input type="number" name="DIS" id="DIS" placeholder="DIS">
-            <input type="number" name="RAD" id="RAD" placeholder="RAD">
-            <input type="number" name="TAX" id="TAX" placeholder="TAX">
-            <input type="number" name="PT" id="PT" placeholder="PT">
-            <input type="number" name="B" id="B" placeholder="B">
-            <input type="number" name="LSTAT" id="LSTAT" placeholder="LSTAT">
-            <input type="submit" value="Predict">
-        </form>
+<html>
+<head>
+  <title>Linear Regression App</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <h1>Linear Regression App</h1>
+  <form action="/predict" method="POST">
+    <div class="column">
+      <label for="CRIM">CRIM:</label>
+      <input type="number" id="CRIM" name="CRIM"><br>
+      <label for="ZN">ZN:</label>
+      <input type="number" id="ZN" name="ZN"><br>
+      <label for="CHAS">CHAS:</label>
+      <input type="number" id="CHAS" name="CHAS"><br>
     </div>
-</div>
-{% endblock %}
+    <div class="column">
+      <label for="NOX">NOX:</label>
+      <input type="number" id="NOX" name="NOX"><br>
+      <label for="RM">RM:</label>
+      <input type="number" id="RM" name="RM"><br>
+      <label for="DIS">DIS:</label>
+      <input type="number" id="DIS" name="DIS"><br>
+    </div>
+    <div class="column">
+      <label for="RAD">RAD:</label>
+      <input type="number" id="RAD" name="RAD"><br>
+      <label for="TAX">TAX:</label>
+      <input type="number" id="TAX" name="TAX"><br>
+      <label for="PT">PT:</label>
+      <input type="number" id="PT" name="PT"><br>
+    </div>
+    <div class="column">
+      <label for="B">B:</label>
+      <input type="number" id="B" name="B"><br>
+      <label for="LSTAT">LSTAT:</label>
+      <input type="number" id="LSTAT" name="LSTAT"><br>
+      <button type="submit" value="Predict">Predict</button>
+    </div>
+  </form>
+  <div id="result"></div>
+  <script src="script.js"></script>
+</body>
+</html>
