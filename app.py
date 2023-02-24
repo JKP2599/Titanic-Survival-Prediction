@@ -21,36 +21,31 @@ def index():
         try:
             log_writer.log(file_object, "Taking User Input")
 
-            CRIM = float(request.form['CRIM'])
-            ZN = float(request.form['ZN'])
-            CHAS = float(request.form['CHAS'])
-            NOX = float(request.form['NOX'])
-            RM = float(request.form['RM'])
-            DIS = float(request.form['DIS'])
-            RAD = float(request.form['RAD'])
-            TAX = float(request.form['TAX'])
-            PT = float(request.form['PT'])
-            B = float(request.form['B'])
-            LSTAT = float(request.form['LSTAT'])
+            pclass = float(request.form['pclass'])
+            sex = float(request.form['sex'])
+            age = float(request.form['age'])
+            sibsp = float(request.form['sibsp'])
+            parch = float(request.form['parch'])
+            fare = float(request.form['fare'])
 
 
-            linReg_model = 'linReg_model.pickle'
-            scale_model = 'scale_model.pickle'
+            tree_model = 'decision_tree_titanic.pickle'
 
-            log_writer.log(file_object, "Initialising Linear Regression Model")
-            linReg = pickle.load(open(linReg_model, 'rb'))  # loading the Linear Regression model from file
-            log_writer.log(file_object, "Initializing Scaling model")
-            scaler = pickle.load(open(scale_model, 'rb'))  # loading the standard scaler model from file
+            log_writer.log(file_object, "Initialising Decision Tree Model")
+            decisionTree = pickle.load(open(tree_model, 'rb'))  # loading the Linear Regression model from file
+
             # predictions using the loaded model file
-
-            log_writer.log(file_object, "Input Scaling")
-            scaled_input = scaler.transform([[CRIM, ZN, CHAS, NOX, RM, DIS, RAD, TAX, PT, B, LSTAT]])
             log_writer.log(file_object, "Generating Prediction using Trained model")
-            prediction = linReg.predict(scaled_input)
-            log_writer.log(file_object, f"The Predicted Price for this Property is {prediction}")
+            prediction = decisionTree.predict([[pclass,sex,age,sibsp,parch,fare]])
+            log_writer.log(file_object, f"Possibility of Survival of this Passanger is {prediction}")
             print('prediction is', prediction)
             # showing the prediction results in a UI
-            return render_template("results.html", prediction=prediction)
+            survival = ''
+            if prediction == 0:
+                survival = "This Passenger Did Not survive"
+            else:
+                survival = "This Passenger Survived"
+            return render_template("index.html", prediction=survival)
             #return f"The Predicted Price for this Property is {prediction}"
         except Exception as e:
             log_writer.log(file_object, "Error Occurred!!")

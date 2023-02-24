@@ -1,44 +1,60 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <title>Linear Regression App</title>
-  <link rel="stylesheet" href="static/css/style.css">
-</head>
-<body>
-  <h1>Linear Regression App</h1>
-  <form action="/predict" method="POST">
-    <div class="column">
-      <label for="CRIM">CRIM:</label>
-      <input type="number" id="CRIM" name="CRIM"><br>
-      <label for="ZN">ZN:</label>
-      <input type="number" id="ZN" name="ZN"><br>
-      <label for="CHAS">CHAS:</label>
-      <input type="number" id="CHAS" name="CHAS"><br>
+  <head>
+    <title>Titanic Passanger Survival Prediction</title>
+    <link rel="stylesheet" href="static/css/style.css">
+  </head>
+  <body>
+    <h1>Titanic Passanger Survival Prediction</h1>
+    <form action="/predict" method="POST">
+      <div class="form-group">
+        <label for="pclass">Pclass:</label>
+        <div class="radio-group">
+          <input type="radio" id="pclass1" name="pclass" value="1">
+          <label for="pclass1">1</label>
+          <input type="radio" id="pclass2" name="pclass" value="2">
+          <label for="pclass2">2</label>
+          <input type="radio" id="pclass3" name="pclass" value="3">
+          <label for="pclass3">3</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="sex">Sex:</label>
+        <div class="radio-group">
+          <input type="radio" id="male" name="sex" value="0">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="sex" value="1">
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+      </div>
+      <div class="form-group">
+        <label for="sibsp">SibSp:</label>
+        <input type="number" id="sibsp" name="sibsp">
+      </div>
+      <div class="form-group">
+        <label for="parch">Parch:</label>
+        <input type="number" id="parch" name="parch">
+      </div>
+      <div class="form-group">
+        <label for="fare">Fare:</label>
+        <input type="text" pattern="\d+(\.\d+)?" id="fare" name="fare">
+      </div>
+      <div>
+        <input type="submit" value="Predict">
+      </div>
+      <br>
+      <br>
+    </form>
+    <br>
+    <br>
+    <div id="pred">
+      <label>{{ prediction }}</label>
     </div>
-    <div class="column">
-      <label for="NOX">NOX:</label>
-      <input type="number" id="NOX" name="NOX"><br>
-      <label for="RM">RM:</label>
-      <input type="number" id="RM" name="RM"><br>
-      <label for="DIS">DIS:</label>
-      <input type="number" id="DIS" name="DIS"><br>
-    </div>
-    <div class="column">
-      <label for="RAD">RAD:</label>
-      <input type="number" id="RAD" name="RAD"><br>
-      <label for="TAX">TAX:</label>
-      <input type="number" id="TAX" name="TAX"><br>
-      <label for="PT">PT:</label>
-      <input type="number" id="PT" name="PT"><br>
-    </div>
-    <div class="column">
-      <label for="B">B:</label>
-      <input type="number" id="B" name="B"><br>
-      <label for="LSTAT">LSTAT:</label>
-      <input type="number" id="LSTAT" name="LSTAT"><br>
-      <button type="submit" value="Predict">Predict</button>
-    </div>
-  </form>
-  <div id="result"></div>
-  <script src="script.js"></script>
-</body>
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
 </html>
