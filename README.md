@@ -33,3 +33,4 @@ Due to the future deprecation warning for the boston dataset, the data is loaded
 
 Stastistical Analysis of the dataset reveals that INDUS and AGE contribute little to the target variable.
 Hence these are not considered for the prediction.
+# Titanic-Survival-Prediction
