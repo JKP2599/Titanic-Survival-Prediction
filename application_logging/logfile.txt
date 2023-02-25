@@ -174,3 +174,7 @@
 2023-02-24/22:41:38		Initialising Decision Tree Model
 2023-02-24/22:41:39		Generating Prediction using Trained model
 2023-02-24/22:41:39		Possibility of Survival of this Passanger is [1]
+2023-02-25/09:57:39		Taking User Input
+2023-02-25/09:57:39		Initialising Decision Tree Model
+2023-02-25/09:57:42		Generating Prediction using Trained model
+2023-02-25/09:57:42		Possibility of Survival of this Passanger is [1]
