@@ -51,7 +51,7 @@ def index():
             log_writer.log(file_object, "Error Occurred!!")
             log_writer.log(file_object, f'The Exception message is: {e}')
             print('The Exception message is: ', e)
-            return 'something went wrong'
+            return 'something went wrong', e
     # return render_template('results.html')
     else:
         return render_template('index.html')
