@@ -6,6 +6,12 @@ The decision tree model was implemented using the scikit-learn library and was o
 
 Using this app, users can input the aforementioned variables for any hypothetical passenger, and the model will predict their likelihood of surviving the Titanic disaster. This app could be particularly useful for historians or Titanic enthusiasts interested in exploring the factors that influenced survival rates on the fateful voyage.
 
+### Try it out for yourself
+
+[Titanic Survival Predictor]()
+
+Note: The page may take up to 30 seconds to load due to platform limitation
+
 ### Dataset Description
 
 The Titanic dataset is a popular dataset in the field of data science and machine learning. It contains information on the passengers who were aboard the Titanic when it famously sank on its maiden voyage in 1912.
